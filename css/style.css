@@ -118,6 +118,22 @@ body._hold {
 }
 .wrapper_game-2 .reel .icons img {
   width: calc(100% - 30px);
+  padding-bottom: 0.9375rem;
+}
+@media (min-height: 21.25em) {
+  .wrapper_game-2 .reel .icons img {
+    padding-bottom: 0.625rem;
+  }
+}
+@media (min-height: 23.4375em) {
+  .wrapper_game-2 .reel .icons img {
+    padding-bottom: 0.3125rem;
+  }
+}
+@media (min-height: 25.625em) {
+  .wrapper_game-2 .reel .icons img {
+    padding-bottom: 0rem;
+  }
 }
 .wrapper_game-3 #reels {
   border: none;
@@ -556,13 +572,13 @@ body._hold {
   }
 }
 .main__body._active .main__item:first-child {
-  animation: show_item_x 0.3s ease 0.9s forwards;
+  animation: show_item_x 0.3s ease 0.6s forwards;
 }
 .main__body._active .main__item:nth-child(2) {
-  animation: show_item_y 0.3s ease 0.9s forwards;
+  animation: show_item_y 0.3s ease 0.6s forwards;
 }
 .main__body._active .main__item:last-child {
-  animation: show_item_x 0.3s ease 0.9s forwards;
+  animation: show_item_x 0.3s ease 0.6s forwards;
 }
 .main__item:first-child {
   opacity: 0;
