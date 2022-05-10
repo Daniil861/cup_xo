@@ -139,8 +139,6 @@ body._hold {
   border: none;
   background: none;
   padding-left: 0px;
-  max-height: calc(90vh - 70px);
-  max-width: calc(2.2 * (90vh - 80px));
 }
 @media (min-height: 18.75em) {
   .wrapper_game-3 #reels {
@@ -150,38 +148,38 @@ body._hold {
 }
 @media (min-height: 20.625em) {
   .wrapper_game-3 #reels {
-    max-height: calc(90vh - 140px);
-    max-width: calc(2.2 * (90vh - 150px));
+    max-height: calc(90vh - 160px);
+    max-width: calc(2.2 * (90vh - 170px));
   }
 }
 @media (min-height: 21.875em) {
   .wrapper_game-3 #reels {
-    max-height: calc(90vh - 160px);
-    max-width: calc(2.2 * (90vh - 150px));
+    max-height: calc(90vh - 170px);
+    max-width: calc(2.2 * (90vh - 180px));
   }
 }
 @media (min-height: 23.125em) {
   .wrapper_game-3 #reels {
-    max-height: calc(90vh - 180px);
-    max-width: calc(2.2 * (90vh - 170px));
+    max-height: calc(90vh - 190px);
+    max-width: calc(2.2 * (90vh - 200px));
   }
 }
 @media (min-height: 24.6875em) {
   .wrapper_game-3 #reels {
-    max-height: calc(90vh - 200px);
-    max-width: calc(2.2 * (90vh - 190px));
+    max-height: calc(90vh - 210px);
+    max-width: calc(2.2 * (90vh - 220px));
   }
 }
 @media (min-height: 25.625em) {
   .wrapper_game-3 #reels {
-    max-height: calc(90vh - 210px);
-    max-width: calc(2.2 * (90vh - 200px));
+    max-height: calc(90vh - 220px);
+    max-width: calc(2.2 * (90vh - 230px));
   }
 }
 @media (min-height: 26.5625em) {
   .wrapper_game-3 #reels {
-    max-height: calc(90vh - 230px);
-    max-width: calc(2.2 * (90vh - 220px));
+    max-height: calc(90vh - 240px);
+    max-width: calc(2.2 * (90vh - 250px));
   }
 }
 .wrapper_game-3 .reel:not(:last-child) {
@@ -209,7 +207,7 @@ body._hold {
 }
 @media (min-height: 20.625em) {
   .wrapper_game-3 #slot {
-    top: 3.75rem;
+    top: 4.375rem;
   }
 }
 @media (min-height: 21.875em) {
