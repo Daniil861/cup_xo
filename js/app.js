@@ -80,16 +80,19 @@
             document.querySelectorAll(block).forEach((el => el.classList.remove("_anim-add-money")));
         }), delay_off);
     }
+    let anim_items = document.querySelectorAll(".item-score__icon img");
     function get_random_animate() {
         let number = get_random(0, 3);
         let arr = [ "jump", "scale", "rotate" ];
-        let block_icon = document.querySelector(".money__icon img");
-        if (block_icon.classList.contains("_anim-icon-jump")) block_icon.classList.remove("_anim-icon-jump"); else if (block_icon.classList.contains("_anim-icon-scale")) block_icon.classList.remove("_anim-icon-scale"); else if (block_icon.classList.contains("_anim-icon-rotate")) block_icon.classList.remove("_anim-icon-rotate");
+        let random_item = get_random(0, anim_items.length);
+        anim_items.forEach((el => {
+            if (el.classList.contains("_anim-icon-jump")) el.classList.remove("_anim-icon-jump"); else if (el.classList.contains("_anim-icon-scale")) el.classList.remove("_anim-icon-scale"); else if (el.classList.contains("_anim-icon-rotate")) el.classList.remove("_anim-icon-rotate");
+        }));
         setTimeout((() => {
-            block_icon.classList.add(`_anim-icon-${arr[number]}`);
+            anim_items[random_item].classList.add(`_anim-icon-${arr[number]}`);
         }), 100);
     }
-    if (document.querySelector(".money__icon img")) setInterval((() => {
+    if (document.querySelector(".item-score__icon img")) setInterval((() => {
         get_random_animate();
     }), 1e4);
     if (document.querySelector(".main__body") && document.querySelector(".preloader").classList.contains("_hide")) document.querySelector(".main__body").classList.add("_active");
