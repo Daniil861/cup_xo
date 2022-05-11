@@ -734,6 +734,7 @@ body._hold {
   align-items: center;
   justify-content: space-between;
   column-gap: 0.3125rem;
+  padding-bottom: 0.3125rem;
 }
 .item-score__body {
   display: flex;
@@ -749,6 +750,12 @@ body._hold {
   font-size: 1rem;
   line-height: 1.1875;
 }
+@media (min-height: 43.75em) {
+  .item-score__text {
+    font-size: 2rem;
+    line-height: 1.34375;
+  }
+}
 .item-score__box {
   background: linear-gradient(180deg, #a2aca6 0%, #2d3633 100%);
   border-radius: 8px;
@@ -758,12 +765,29 @@ body._hold {
   width: 6.25rem;
   height: 1.25rem;
 }
+@media (min-height: 43.75em) {
+  .item-score__box {
+    width: 7.5rem;
+    height: 2.1875rem;
+  }
+}
 .item-score__count {
   margin-right: 0.3125rem;
   margin-top: -0.125rem;
   font-size: 0.875rem;
   line-height: 1.2142857143;
   color: #ffffff;
+}
+@media (min-height: 43.75em) {
+  .item-score__count {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+}
+@media (min-height: 43.75em) {
+  .item-score__icon img {
+    width: 1.4375rem;
+  }
 }
 .item-score__icon img._anim-icon-jump {
   animation: jump_icon 5s ease;
@@ -814,6 +838,11 @@ body._hold {
 @media (max-width: 46.875em) {
   .btn-game img {
     max-width: 80%;
+  }
+}
+@media (min-height: 43.75em) {
+  .btn-game {
+    height: 4.375rem;
   }
 }
 
